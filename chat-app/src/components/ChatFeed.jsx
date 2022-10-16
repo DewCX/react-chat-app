@@ -12,7 +12,7 @@ const ChatFeed = (props) => {
     const renderMessages = () => {
         const keys = Object.keys(messages);
 
-        return keys.map{(key, index) => {
+        return keys.map((key, index) => {
             const message = messages[keys];
             const lastMessageKey = index === 0 ? null: keys[index - 1];
             const isMyMessage = userName === message.sender.username;
@@ -30,9 +30,10 @@ const ChatFeed = (props) => {
                         read-receipts
                     </div>
                 </div>
-            )
-        }}
-    }
+            );
+        }
+    );
+}
 
     renderMessages();
 
@@ -57,14 +58,6 @@ const ChatFeed = (props) => {
     );
 }
 
-
-
-
-    return (
-        <div>
-            ChatFeed
-        </div>
-    );
 
 
 export default ChatFeed;
